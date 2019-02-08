@@ -6,9 +6,8 @@ before_script:
   - mkdir ../build
   - cd ../build
 script:
-  - cmake ../381706-1_AndreySokolov_AllLabs
+  - cmake ../381706-1_DenisOstapovich_AllLabs
   - make -j
-  - cd ./bin/
-  - ./381706-1_AndreySokolov_AllLabs
+  - ./381706-1_DenisOstapovich_AllLabs
 notifications:
   email: false
