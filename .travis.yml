@@ -11,3 +11,6 @@ script:
   - ./381706-1_DenisOstapovich_AllLabs
 notifications:
   email: false
+branches:
+  only:
+    - Stack
