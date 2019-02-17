@@ -1,6 +1,5 @@
 #include "Stack.h"
 
-
 int main()
 {
 	int n;
