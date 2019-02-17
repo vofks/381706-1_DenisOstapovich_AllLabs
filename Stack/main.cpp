@@ -1,33 +1,33 @@
-#include "Stack.h"
+#include "stack.h"
 
 int main()
 {
 	int n;
 	setlocale(LC_ALL, "Rus");
-  cout << "Ââåäèòå ðàçìåð ñòåêà n: \n ";  
+  cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã°Ã Ã§Ã¬Ã¥Ã° Ã±Ã²Ã¥ÃªÃ  n: \n ";  
   cin >> n;
   
   TStack<int> stack(n);
   for (int i = 0; i < n; i++)
     stack.Push(i);
 
-  cout << "Ñòåê :\n";
+  cout << "Ã‘Ã²Ã¥Ãª :\n";
   stack.Print();
 
   TStack<int> stack2(stack);
-  cout << "Ñòåê 2:\n";
+  cout << "Ã‘Ã²Ã¥Ãª 2:\n";
   stack2.Print();
 
   if (stack2 == stack)
-  cout << "Ñòåêè îäèíàêîâûå";
+  cout << "Ã‘Ã²Ã¥ÃªÃ¨ Ã®Ã¤Ã¨Ã­Ã ÃªÃ®Ã¢Ã»Ã¥";
 
-  cout << "Ýëåìåíò ñ âåðøèíû ñòåêà: " << stack.Pop();
+  cout << "ÃÃ«Ã¥Ã¬Ã¥Ã­Ã² Ã± Ã¢Ã¥Ã°Ã¸Ã¨Ã­Ã» Ã±Ã²Ã¥ÃªÃ : " << stack.Pop();
 
-  cout << "Îáíîâë¸ííûé ñòåê:\n";
+  cout << "ÃŽÃ¡Ã­Ã®Ã¢Ã«Â¸Ã­Ã­Ã»Ã© Ã±Ã²Ã¥Ãª:\n";
   stack.Print();
 
   if (stack2 != stack)
-    cout << "Ñòåêè ðàçíûå\n";
+    cout << "Ã‘Ã²Ã¥ÃªÃ¨ Ã°Ã Ã§Ã­Ã»Ã¥\n";
   
   return 0;
 }
