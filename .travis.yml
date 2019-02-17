@@ -12,5 +12,5 @@ script:
 notifications:
   email: false
 branches:
-  only:
-    - Stack
+  except:
+    - master
