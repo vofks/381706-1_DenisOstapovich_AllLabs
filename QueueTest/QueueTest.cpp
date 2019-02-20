@@ -1,4 +1,4 @@
-#include "Queue.h"
+#include "queue.h"
 #include <gtest.h>
 
 TEST(Queue, throws_when_create_queue_with_negative_size)
