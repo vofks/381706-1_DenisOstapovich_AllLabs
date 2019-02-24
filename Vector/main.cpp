@@ -23,8 +23,9 @@ int main()
 	} 
 
 	cout << "Скалярные операции: \n";
-	cout << "vector1 + 5 = " << (vector1 + 5) << "\n";
-	cout << "vector1 - 5 = " << (vector1 - 5) << "\n";
+	vector1 = vector1 + 5;
+	cout << "vector1 + 5 = " << vector1 << "\n";
+	/*cout << "vector1 - 5 = " << (vector1 - 5) << "\n";
 	cout << "vector1 * 5 = " << (vector1 * 5) << "\n";
 
 	cout << "Векторные операции: \n";
@@ -32,5 +33,5 @@ int main()
 	cout << "vector1 - vector2 = " << (vector1 - vector2) << "\n";
 	cout << "vector1 * vector2 = " << (vector1 + vector2) << "\n";
 
-	cout << "Результат сравнения vector1 и vector2: " << (vector1 == vector2) << "\n";
+	cout << "Результат сравнения vector1 и vector2: " << (vector1 == vector2) << "\n";*/
 }
