@@ -7,9 +7,9 @@ project(${PROJECT_NAME})
 # set(VectorLib VectorLib)
 # set(VectorTest VectorTest)
 
- # set(List List)
- # set(ListLib ListLib)
- # set(ListTest ListTest)
+  set(List List)
+  set(ListLib ListLib)
+  set(ListTest ListTest)
 
  # set(Matrix Matrix)
  # set(MatrixLib MatrixLib)
@@ -100,8 +100,8 @@ ${CMAKE_CURRENT_SOURCE_DIR}/gtest
  # add_subdirectory(PolynomialsLib) 
  # add_subdirectory(PolynomialsTest)
 
- # add_subdirectory(List)
- # add_subdirectory(ListLib) 
- # add_subdirectory(ListTest)
+  add_subdirectory(List)
+  add_subdirectory(ListLib) 
+  add_subdirectory(ListTest)
  
  add_subdirectory(gtest)
