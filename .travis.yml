@@ -8,10 +8,14 @@ before_script:
 script:
   - cmake ../381706-1_DenisOstapovich_AllLabs
   - make -j
-  - ./381706-1_DenisOstapovich_AllLabs
+  - ./StackTest/StackTest
 notifications:
   email: false
 branches:
   except:
-    - Master
     - Stack
+    - master
+
+
+
+
