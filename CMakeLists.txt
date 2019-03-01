@@ -27,9 +27,9 @@ project(${PROJECT_NAME})
  # set(PolynomialsLib PolynomialsLib)
  # set(PolynomialsTest PolynomialsTest)
 
- # set(Queue Queue)
- # set(QueueLib QueueLib)
- # set(QueueTest QueueTest)
+  set(Queue Queue)
+  set(QueueLib QueueLib)
+  set(QueueTest QueueTest)
 
  # set(RPN RPN)
  # set(RPNLib RPNLib)
@@ -76,9 +76,9 @@ ${CMAKE_CURRENT_SOURCE_DIR}/gtest
  # add_subdirectory(ListOnArrayLib) 
  # add_subdirectory(ListOnArrayTest)
 
- # add_subdirectory(Queue)
- # add_subdirectory(QueueLib) 
- # add_subdirectory(QueueTest)
+  add_subdirectory(Queue)
+  add_subdirectory(QueueLib) 
+  add_subdirectory(QueueTest)
 
  # add_subdirectory(RPN)
  # add_subdirectory(RPNLib) 
