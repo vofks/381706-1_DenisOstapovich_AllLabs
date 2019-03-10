@@ -15,6 +15,7 @@ protected:
 public:
   TMultiStack(int _n = 1, int _size = 10);
   TMultiStack(TMultiStack &A);
+  ~TMultiStack();
   int GetSize();
   void Set(int _n, T _elem);
   T Get(int _n);
@@ -81,6 +82,15 @@ TMultiStack<T>::TMultiStack(TMultiStack &A)
       stackMas[i]->SetMas(p[i], q[i]);
     }
   }
+}
+
+template <class T>
+TMStack<T>::~TMultiStack()
+{
+	size = 0;
+	n = 0;
+	delete[] mas;
+	delete[] stackMas;
 }
 
 template <class T>
