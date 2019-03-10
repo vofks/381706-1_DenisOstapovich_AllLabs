@@ -85,7 +85,7 @@ TMultiStack<T>::TMultiStack(TMultiStack &A)
 }
 
 template <class T>
-TMStack<T>::~TMultiStack()
+TMultiStack<T>::~TMultiStack()
 {
 	size = 0;
 	n = 0;
