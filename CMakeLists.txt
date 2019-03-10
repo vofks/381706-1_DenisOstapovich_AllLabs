@@ -19,13 +19,15 @@ set(ListOnArray ListOnArray)
 set(ListOnArrayLib ListOnArrayLib)
 set(ListOnArrayTest ListOnArrayTest)
 
+
 #set(MultiStack MultiStack)
 #set(MultiStackLib MultiStackLib)
 #set(MultiStackTest MultiStackTest)
 
- # set(Polynomials Polynomials)
- # set(PolynomialsLib PolynomialsLib)
- # set(PolynomialsTest PolynomialsTest)
+
+set(Polynomials Polynomials)
+set(PolynomialsLib PolynomialsLib)
+set(PolynomialsTest PolynomialsTest)
 
 set(Queue Queue)
 set(QueueLib QueueLib)
@@ -92,13 +94,15 @@ add_subdirectory(StackOnLists)
 add_subdirectory(StackOnListsLib) 
 add_subdirectory(StackOnListsTest)
 
+
 #add_subdirectory(MultiStack)
 #add_subdirectory(MultiStackLib) 
 #add_subdirectory(MultiStackTest)
 
- # add_subdirectory(Polynomials)
- # add_subdirectory(PolynomialsLib) 
- # add_subdirectory(PolynomialsTest)
+
+add_subdirectory(Polynomials)
+add_subdirectory(PolynomialsLib) 
+add_subdirectory(PolynomialsTest)
 
 add_subdirectory(List)
 add_subdirectory(ListLib) 
