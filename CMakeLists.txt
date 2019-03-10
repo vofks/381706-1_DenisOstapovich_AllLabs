@@ -3,25 +3,27 @@
 set(PROJECT_NAME AllLabs) 
 project(${PROJECT_NAME})
 
-#set(Vector Vector)
-#set(VectorLib VectorLib)
-#set(VectorTest VectorTest)
+set(Vector Vector)
+set(VectorLib VectorLib)
+set(VectorTest VectorTest)
 
 set(List List)
 set(ListLib ListLib)
 set(ListTest ListTest)
 
- # set(Matrix Matrix)
- # set(MatrixLib MatrixLib)
- # set(MatrixTest MatrixTest)
+set(Matrix Matrix)
+set(MatrixLib MatrixLib)
+set(MatrixTest MatrixTest)
 
-  set(ListOnArray ListOnArray)
-  set(ListOnArrayLib ListOnArrayLib)
-  set(ListOnArrayTest ListOnArrayTest)
+set(ListOnArray ListOnArray)
+set(ListOnArrayLib ListOnArrayLib)
+set(ListOnArrayTest ListOnArrayTest)
 
-set(MultiStack MultiStack)
-set(MultiStackLib MultiStackLib)
-set(MultiStackTest MultiStackTest)
+
+#set(MultiStack MultiStack)
+#set(MultiStackLib MultiStackLib)
+#set(MultiStackTest MultiStackTest)
+
 
 set(Polynomials Polynomials)
 set(PolynomialsLib PolynomialsLib)
@@ -64,17 +66,17 @@ ${CMAKE_CURRENT_SOURCE_DIR}/QueueLib
 ${CMAKE_CURRENT_SOURCE_DIR}/gtest
 )
 
-#add_subdirectory(Vector)
-#add_subdirectory(VectorLib) 
-#add_subdirectory(VectorTest)
+add_subdirectory(Vector)
+add_subdirectory(VectorLib) 
+add_subdirectory(VectorTest)
 
- # add_subdirectory(Matrix)
- # add_subdirectory(MatrixLib) 
- # add_subdirectory(MatrixTest)
+add_subdirectory(Matrix)
+add_subdirectory(MatrixLib) 
+add_subdirectory(MatrixTest)
 
-  add_subdirectory(ListOnArray)
-  add_subdirectory(ListOnArrayLib) 
-  add_subdirectory(ListOnArrayTest)
+add_subdirectory(ListOnArray)
+add_subdirectory(ListOnArrayLib) 
+add_subdirectory(ListOnArrayTest)
 
 add_subdirectory(Queue)
 add_subdirectory(QueueLib) 
@@ -92,9 +94,11 @@ add_subdirectory(StackOnLists)
 add_subdirectory(StackOnListsLib) 
 add_subdirectory(StackOnListsTest)
 
-add_subdirectory(MultiStack)
-add_subdirectory(MultiStackLib) 
-add_subdirectory(MultiStackTest)
+
+#add_subdirectory(MultiStack)
+#add_subdirectory(MultiStackLib) 
+#add_subdirectory(MultiStackTest)
+
 
 add_subdirectory(Polynomials)
 add_subdirectory(PolynomialsLib) 

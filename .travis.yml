@@ -14,7 +14,7 @@ notifications:
 branches:
   except:
     - Stack
-    - master
+    
 
 
 
