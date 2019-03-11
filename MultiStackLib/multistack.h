@@ -87,10 +87,11 @@ TMultiStack<T>::TMultiStack(TMultiStack &A)
 template <class T>
 TMultiStack<T>::~TMultiStack()
 {
-	size = 0;
-	n = 0;
-	delete[] mas;
-	delete[] stackMas;
+  for(int i = 0; i < n; i++)
+    delete [] tackMas[i];
+  size = 0;
+  n = 0;
+  delete[] mas;  
 }
 
 template <class T>
