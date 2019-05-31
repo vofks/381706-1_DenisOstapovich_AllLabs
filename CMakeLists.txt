@@ -3,6 +3,10 @@
 set(PROJECT_NAME AllLabs) 
 project(${PROJECT_NAME})
 
+set(ViewTable ViewTable)
+set(ViewTableLib ViewTableLib)
+set(ViewTableTest ViewTableTest)
+
 set(Vector Vector)
 set(VectorLib VectorLib)
 set(VectorTest VectorTest)
@@ -19,11 +23,9 @@ set(ListOnArray ListOnArray)
 set(ListOnArrayLib ListOnArrayLib)
 set(ListOnArrayTest ListOnArrayTest)
 
-
-#set(MultiStack MultiStack)
-#set(MultiStackLib MultiStackLib)
-#set(MultiStackTest MultiStackTest)
-
+set(MultiStack MultiStack)
+set(MultiStackLib MultiStackLib)
+set(MultiStackTest MultiStackTest)
 
 set(Polynomials Polynomials)
 set(PolynomialsLib PolynomialsLib)
@@ -54,6 +56,7 @@ file(GLOB hdrs "*.h*")
 file(GLOB srcs "*.cpp") 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/VectorLib
+${CMAKE_CURRENT_SOURCE_DIR}/ViewTableLib
 ${CMAKE_CURRENT_SOURCE_DIR}/MatrixLib
 ${CMAKE_CURRENT_SOURCE_DIR}/StackLib
 ${CMAKE_CURRENT_SOURCE_DIR}/ListLib
@@ -65,6 +68,10 @@ ${CMAKE_CURRENT_SOURCE_DIR}/PolynomialsLib
 ${CMAKE_CURRENT_SOURCE_DIR}/QueueLib
 ${CMAKE_CURRENT_SOURCE_DIR}/gtest
 )
+
+add_subdirectory(ViewTable)
+add_subdirectory(ViewTableLib) 
+add_subdirectory(ViewTableTest)
 
 add_subdirectory(Vector)
 add_subdirectory(VectorLib) 
@@ -82,9 +89,9 @@ add_subdirectory(Queue)
 add_subdirectory(QueueLib) 
 add_subdirectory(QueueTest)
 
- # add_subdirectory(RPN)
- # add_subdirectory(RPNLib) 
- # add_subdirectory(RPNTest)
+ # # add_subdirectory(RPN)
+ # # add_subdirectory(RPNLib) 
+ # # add_subdirectory(RPNTest)
 
 add_subdirectory(Stack)
 add_subdirectory(StackLib) 
@@ -95,9 +102,9 @@ add_subdirectory(StackOnListsLib)
 add_subdirectory(StackOnListsTest)
 
 
-#add_subdirectory(MultiStack)
-#add_subdirectory(MultiStackLib) 
-#add_subdirectory(MultiStackTest)
+add_subdirectory(MultiStack)
+add_subdirectory(MultiStackLib) 
+add_subdirectory(MultiStackTest)
 
 
 add_subdirectory(Polynomials)
